@@ -13,20 +13,23 @@ So one of the key goals of this lab is to begin to gain familiarity with the com
 
 **Table of Contents** 
   - [Tasks to learn](#tasks-to-learn)
+  - [Forking and cloning a project in git and Github](#forking-and-cloning-a-project-in-git-and-github)
+     - [Exercises](#git-exercises)
   - [Picking a command line editor and starting to learn it](#picking-a-command-line-editor-and-starting-to-learn-it)
   - [The basics of `bash` and Unix command line tools](#the-basics-of-bash-and-unix-command-line-tools)
      - [Exercises](#bash-exercises)
-  - [gitting to it](#gitting-to-it)
-     - [Exercises](#git-exercises)
   - [What to do](#what-to-do)
 
 ## Key tasks
 
-* Pick a command-line editor and start to learn it
-* Start reading about 'bash'
-* Start reading about 'git'
-* Complete a simple group of `bash` exercises
-* Complete a simple group of `git` exercises
+* Command line tools
+    * Pick a command-line editor and start to learn it
+    * Start reading about 'bash'
+* `git`/Github
+    * Start reading about 'git' and Github
+* Exercises
+    * Complete a simple group of `git` exercises
+    * Complete a simple group of `bash` exercises
 
 ## Picking a command line editor and starting to learn it
 
