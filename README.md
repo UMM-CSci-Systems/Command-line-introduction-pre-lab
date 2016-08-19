@@ -1,4 +1,4 @@
-# Command-line-introduction pre-lab
+# Command Line Introduction pre-lab
 
 Pre-lab for the [Command-line-introduction lab](https://github.com/UMM-CSci-Systems/Command-line-introduction). This lab and pre-lab cover:
 
@@ -50,50 +50,39 @@ The Internet is awash in materials on both editors:
 * [Absolute beginner's guide to emacs](http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/)
 * [Cult of vi vs church of emacs](https://en.wikipedia.org/wiki/Editor_war)
 
-##Learning bash
+## The basics of `bash` and Unix command-line tools
 
-In just a moment I am going to ask you to do a tutorial.  In a few places that tutorial makes some assumptions about prior knowledge.  We will cover some of that material on Thursday.  In particular, we will be discussing:
+Unix and Unix-like systems provide an incredibly powerful collection of command line tools for processing and manipulating files and their contents. Over the course of these labs we'll cover what may seem like a _ton_ of command line material, but which will in fact only be a fraction of what's possible.
 
-* the structure of a file system
-* a short overview of permissions
-* how to execute a script
-* Standard input, standard output, standard error, and piping
-* Some relevant odds-and-ends
+Many of you will come into this with almost no experience with the Unix command line, while others may already have a fair amount of practice with these tools. Luckily there are a _lot_ of good resources on the Internet to help get us all up to speed. A few tutorials that we think should be helpful:
 
-If these ideas are new to you (or you just want some reinforcement), then try
+* ["Learn Enough Command Line to Be Dangerous"](https://www.learnenough.com/command-line-tutorial)
+* ["Linux tutorial" by Ryan Chadwick](http://ryanstutorials.net/linuxtutorial/)
+* ["BASH Programming - Introduction HOW-TO"](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
-http://ryanstutorials.net/linuxtutorial/piping.php
+These are in roughly decreasing order of "chattiness". The "Learn Enough" tutorial is complete with sidebars and XKCD (relevant) comics, where the "BASH Programming" introduction is from 2000 and much more terse and "business-like"; the Chadwick tutorial is somewhere in between. They also don't cover exactly the same material in the same order; if you find one's coverage of a concept (e.g., pipes) doesn't make a lot of sense, have a look at how it's covered in one of the other tutorials.
 
-**Now... back to your originally scheduled tutorial.**
+Alternatively, if you prefer videos/screencasts, these two series:
 
-Before the start of next week's lab you should complete this shell tutorial: http://www.linuxdoc.org/HOWTO/Bash-Prog-Intro-HOWTO.html. 
+* [Linux commands for beginners](https://www.youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ)
+* [Introduction to `bash` scripting](https://www.youtube.com/playlist?list=PLT98CRl2KxKG2RCPkG6EPOA-g1FmLfcZl)
 
-It may look a little daunting when you see the table of contents (there are 14 sections!), but each of the sections are very short so the reading shouldn't take long. I'd particularly concentrate on Sections 2 through 7, but the whole thing is worth reading through. I strongly would advise that you do the reading in the lab or at least at a machine that has a terminal program with the bash shell installed so you can try some of these things out.  
-
-As you are going through the tutorial go through it once in a quick pass and don't worry too much if things don't make perfect sense the first time (this tutorial is good for review-- but frequently introduces useful information *after* the first time it uses it).  **AFTER** the first pass, if something is not making sense on your second reading, or does not seem to be working correctly **please** ask me about it.
-
-The page http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html also has a nice set of tutorials and goes a bit deeper on some subjects (you may find it useful to read them in tandem).  However, although it's worth looking at, please don't knock yourself out trying to understand it all before next class.
-
-In addition, the video sequence starting here:
-
-https://www.youtube.com/watch?v=NWWvZa-qlRE (start at minute 4:34)
-
-is quite nice.  (You'll notice that the narrator is using `nano` as their editor-- **you** should be using the editor you choose earlier.)  These videos are better about **not** assuming prior knowledge but suffer from two problems:
+cover essentially the same material, but again in a quite different order and with a different style. (You'll notice that the narrator is using `nano` as their editor – _you_ should be using the editor you choose earlier.) These videos do a pretty good job about starting from the bare minimum, but:
 
 * It's hard to go back and find previous information
-* It takes a lot longer than reading (at least for me)
+* Following along with the video can be a lot slower than following along with text for some people
 
-Feel free to watch them.
+In order to prepare yourself for this lab, and others that will follow, you should go through one or more of these (or something similar you find on-line that's more to your taste). We don't really care _which_ one you do, but we will expect you to have gone through something like this and made some effort to explore and practice with soem of the basic tools. This is likely to take a few hours (especially if you "play along" at home, which you'll really want to do if you want to _learn_ these concepts and tools), so don't assume you can just bang through one of these in 15 minutes.
 
-Most Windows users won't have a version of bash, and if you're not sure you almost certainly don't. It's available standard out of box on Macs and Linux boxes; if you have a Mac, look in your Applications/Utilities and you'll fine it.  If you are using windows you can install `cygwin` (https://www.cygwin.com/).
+We would _strongly_ advise that you go through your tutorial(s) of choice in the lab or at least at a machine that has a terminal program with the bash shell installed so you can try some of these things out as you go along. Most Windows users won't have a version of `bash`, and if you're not sure you almost certainly don't. It's available standard out of box on Macs and Linux boxes; if you have a Mac, look in you `Applications/Utilities` and you'll find it. If you are using windows you can install `cygwin` (https://www.cygwin.com/). You can also using the MacOS `Terminal` program or something like Putty on Windows to `ssh` into a lab box and go through the tutorial that way.
 
-The final thing I'll mention here is the `man` command. If during your reading or the lab you run across a command that you aren't familiar with then the man command is your friend. To find out more about a certain shell function simply type in
+As you are going through the tutorial go through it once in a quick pass and don't worry too much if things don't make perfect sense the first time. If something is not making sense on your second reading, or does not seem to be working correctly **please** ask about it.
+
+The final thing we'll mention here is the `man` command. If during your reading or the lab you run across a command that you aren't familiar with then the `man` command can be your friend. To find out more about a certain shell function simply type
 
 ```man function_name_here```
 
-This will bring up a page that (supposedly) describes what that function does. Navigate the man page with the arrow keys and press q to quit back to the command line.
-
-Keep in mind that man pages are written by the person or persons who created the function. This means that the man pages throughout the shell vary from extremely technical and detailed to non-existent. If the man page isn't helpful, some simple googling should bring up tons of sites to supplement a poor man page.
+This will bring up a page that (supposedly) describes what that function does. Navigate the man page with the arrow keys and press q to quit back to the command line. Keep in mind that man pages are written by the person or persons who created the function. This means that the man pages throughout the shell vary from extremely technical and detailed to non-existent. If the man page isn't helpful, some simple searching on-line should bring up tons of sites to supplement a confusing `man` page. :exclamation: Be careful, though, as there can be important if subtle differences between different versions of commands, and you're best off using the `man` pages on the system you're using whenever possible.
 
 ###<a name="bash-exercises"></a>Exercise (due before the start of lab on Tuesday)
 
