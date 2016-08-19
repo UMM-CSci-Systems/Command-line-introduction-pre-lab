@@ -14,7 +14,7 @@ So one of the key goals of this lab is to begin to gain familiarity with the com
 **Table of Contents** 
   - [Tasks to learn](#tasks-to-learn)
   - [Picking a command line editor and starting to learn it](#picking-a-command-line-editor-and-starting-to-learn-it)
-  - [Learning bash](#learning-bash)
+  - [The basics of `bash` and Unix command line tools](#the-basics-of-bash-and-unix-command-line-tools)
      - [Exercises](#bash-exercises)
   - [gitting to it](#gitting-to-it)
      - [Exercises](#git-exercises)
