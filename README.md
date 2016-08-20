@@ -12,26 +12,30 @@ One of the consistent messages we get from alums and employers is that people re
 So one of the key goals of this lab is to begin to gain familiarity with the command line and command line editors. One lab won't make you an expert, but hopefully it will be a useful step in helping you feel more competent.
 
 **Table of Contents** 
-  - [Tasks to learn](#tasks-to-learn)
-  - [Forking and cloning a project in git and Github](#forking-and-cloning-a-project-in-git-and-github)
-     - [Exercises](#git-exercises)
+
+  - [Key tasks](#key-tasks)
   - [Picking a command line editor and starting to learn it](#picking-a-command-line-editor-and-starting-to-learn-it)
   - [The basics of `bash` and Unix command line tools](#the-basics-of-bash-and-unix-command-line-tools)
-     - [Exercises](#bash-exercises)
+  - [Forking and cloning a project using `git` and Github](#forking-and-cloning-a-project-using-git-and-github)
+  - Exercises
+     - [`git` exercises](#git-exercises)
+     - [`bash` exercises](#bash-exercises)
   - [What to do](#what-to-do)
 
 ## Key tasks
 
 * Command line tools
-    * Pick a command-line editor and start to learn it
-    * Start reading about 'bash'
+    - [ ] Pick a command-line editor and start to learn it
+    - [ ] Start reading about 'bash'
 * `git`/Github
-    * Start reading about 'git' and Github
+    - [ ] Start reading about 'git' and Github
 * Exercises
-    * Complete a simple group of `git` exercises
-    * Complete a simple group of `bash` exercises
+    - [ ] Complete a simple group of `git` exercises
+    - [ ] Complete a simple group of `bash` exercises
 
-## Picking a command line editor and starting to learn it
+## Command line tools
+
+### Picking a command line editor and starting to learn it
 
 It's enormously useful to know how to use a command line editor for those times when you don't have access to all the nifty windowing stuff that we've grown so happily used to using. Your best options are probably `emacs` and `vim` (or its less sophisticated ancestor `vi` ).  There are many other options, but these two are some of the more popular *powerful* options (I'll outline a few reasons below)
 
@@ -53,7 +57,7 @@ The Internet is awash in materials on both editors:
 * [Absolute beginner's guide to emacs](http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/)
 * [Cult of vi vs church of emacs](https://en.wikipedia.org/wiki/Editor_war)
 
-## The basics of `bash` and Unix command-line tools
+### The basics of `bash` and Unix command-line tools
 
 Unix and Unix-like systems provide an incredibly powerful collection of command line tools for processing and manipulating files and their contents. Over the course of these labs we'll cover what may seem like a _ton_ of command line material, but which will in fact only be a fraction of what's possible.
 
@@ -87,7 +91,36 @@ The final thing we'll mention here is the `man` command. If during your reading 
 
 This will bring up a page that (supposedly) describes what that function does. Navigate the man page with the arrow keys and press q to quit back to the command line. Keep in mind that man pages are written by the person or persons who created the function. This means that the man pages throughout the shell vary from extremely technical and detailed to non-existent. If the man page isn't helpful, some simple searching on-line should bring up tons of sites to supplement a confusing `man` page. :exclamation: Be careful, though, as there can be important if subtle differences between different versions of commands, and you're best off using the `man` pages on the system you're using whenever possible.
 
-###<a name="bash-exercises"></a>Exercise (due before the start of lab on Tuesday)
+## Forking and cloning a project using `git` and Github
+
+We'll use `git` through the course as a way for groups to manage shared project resources (like code) and as the primary means for you to turn in your finished work. Some of you will be familiar with `git` from previous courses, while others will have never used it before. If you've never used `git` before you might want to read https://www.atlassian.com/git/tutorials/
+and https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+## Exercises
+
+Both of the small sets of exercises below (one on `git` and one on `bash` and the command line) will be due by the end of the first lab session of the semester. The first full lab on the command line also officially starts at the beginning of the first lab session, so the more of this pre-lab that you have done before that lab starts, the more time you'll have to work on the first lab. We want to make sure that people have a chance to ask questions and get some help before this pre-lab is due, though, which is why it's due at the _end_ of lab. All other pre-labs will be due at or before the beginning of the associated lab period.
+
+- [ ] [`git` exercises](#git-exercises)
+- [ ] [`bash` exercises](#bash-exercises)
+
+### `git` exercises
+
+You belong to the organization UMM-CSci3403-F15.  One person in your group should login to Github and go to [https://github.umn.edu/UMM-CSci3403-F15/Prelab-0] which has this file (as you know-- you **are** after all reading this).  Next you should create a fork of this repository and push the text files (and subdirectories) with your answers from above.   Don't forget the your file of the form *your_group.member_a.member_b.lab0_prelab.txt* needs to be in your project's root directory so I can know who is in your group.  Make the name of your branch your group name.
+
+Here is one set of procedures you could follow (there are others):
+
+* Clone the file(s) from the repository using `git clone  https://github.umn.edu/UMM-CSci3403-F15/Lab_0.git` (This will make a subdirectory.  Change the current directory to this subdirectory.)
+* Create a new branch `git branch [name_of_your_branch]`
+* Switch to that branch `git checkout [name_of_your_branch]`
+* Make your changes to the contents.  (This is done on your local computer.)  This is where you make the subdirectories and files (or copy them) from your previous set of exercises.
+* Add your new files to the repository using `git add .` while in the root directory of the project,
+* commit your changes with the comment "This is my first git commit!" (you can figure this one out), 
+* and then push them with `git push -u origin [name_of_your_branch]`.
+*  You may want to log into github, go to your new branch, click "Settings", choose the "Collaborators" tab, and add your team-mates to the list.
+
+ALERT! Remember to use `git add` to put your file under version control before you commit. You can use `git status` to see what has changed and needs to be committed.  **ALSO** empty subdirectories won't be added-- so your `more_testing` subdirectory won't be included (even if you try to add it by hand) unless you create a file inside of it.  You can also fork the project 
+
+### `bash` exercises 
 
 You'll want to start by making a directory to hold your files and subdirectories.  Call that whatever you like-- you're not going to turn it in-- only its contents.  We'll call it the the prelab directory.
 
@@ -139,35 +172,14 @@ sed -i "s_Eclipse_my cuddly IDE_g" testfile1.txt
 sed -i "s_Eclipse_my cuddly IDE_g" testfile2.txt
 ```
 
-##<a name="gitting-to-it"></a>`gitting` to it
-
-We'll use `git` through the course as a way for groups to manage shared project resources (like code) and as the primary means for you to turn in your finished work. Some of you will be familiar with `git` from previous courses, while others will have never used it before. If you've never used `git` before you might want to read https://www.atlassian.com/git/tutorials/
-and https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
-
-####<a name="git-exercises"></a>Exercise (also due before class on Tuesday)
-
-You belong to the organization UMM-CSci3403-F15.  One person in your group should login to Github and go to [https://github.umn.edu/UMM-CSci3403-F15/Prelab-0] which has this file (as you know-- you **are** after all reading this).  Next you should create a fork of this repository and push the text files (and subdirectories) with your answers from above.   Don't forget the your file of the form *your_group.member_a.member_b.lab0_prelab.txt* needs to be in your project's root directory so I can know who is in your group.  Make the name of your branch your group name.
-
-Here is one set of procedures you could follow (there are others):
-
-* Clone the file(s) from the repository using `git clone  https://github.umn.edu/UMM-CSci3403-F15/Lab_0.git` (This will make a subdirectory.  Change the current directory to this subdirectory.)
-* Create a new branch `git branch [name_of_your_branch]`
-* Switch to that branch `git checkout [name_of_your_branch]`
-* Make your changes to the contents.  (This is done on your local computer.)  This is where you make the subdirectories and files (or copy them) from your previous set of exercises.
-* Add your new files to the repository using `git add .` while in the root directory of the project,
-* commit your changes with the comment "This is my first git commit!" (you can figure this one out), 
-* and then push them with `git push -u origin [name_of_your_branch]`.
-*  You may want to log into github, go to your new branch, click "Settings", choose the "Collaborators" tab, and add your team-mates to the list.
-
-ALERT! Remember to use `git add` to put your file under version control before you commit. You can use `git status` to see what has changed and needs to be committed.  **ALSO** empty subdirectories won't be added-- so your `more_testing` subdirectory won't be included (even if you try to add it by hand) unless you create a file inside of it.  You can also fork the project 
-
 ##What to do
 
-By the start of next lab you should
-* Have gone through this entire lab
-* Choose an editor and have put some time into learning how to use it
-    * Emacs
-    * VIM (playing vim adventures counts)
-* Finished the tutorial http://www.linuxdoc.org/HOWTO/Bash-Prog-Intro-HOWTO.html
-* Completed the [Bash Exercises](#bash-exercises)
-* Completed the [git Exercises](#gitting-to-it)
+By the start of next lab you should have:
+
+   - [ ] Gone through this entire lab
+   - [ ] Chosen an editor and have put some time into learning how to use it
+      * Emacs
+      * VIM (playing vim adventures counts)
+   - [ ] Gone through a command line tutorial
+   - [ ] Attempted the [`git` Exercises](#git-exercises)
+   - [ ] Attempted the [`bash` Exercises](#bash-exercises)
