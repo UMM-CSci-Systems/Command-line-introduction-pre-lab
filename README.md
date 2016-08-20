@@ -17,7 +17,7 @@ So one of the key goals of this lab is to begin to gain familiarity with the com
   - [Picking a command line editor and starting to learn it](#picking-a-command-line-editor-and-starting-to-learn-it)
   - [The basics of `bash` and Unix command line tools](#the-basics-of-bash-and-unix-command-line-tools)
   - [Forking and cloning a project using `git` and Github](#forking-and-cloning-a-project-using-git-and-github)
-  - Exercises
+  - [Exercises](#exercises)
      - [`git` exercises](#git-exercises)
      - [`bash` exercises](#bash-exercises)
   - [What to do](#what-to-do)
