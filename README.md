@@ -33,6 +33,8 @@ So one of the key goals of this lab is to begin to gain familiarity with the com
     - [ ] Complete a simple group of `git` exercises
     - [ ] Complete a simple group of `bash` exercises
 
+---
+
 ## Command line tools
 
 ### Picking a command line editor and starting to learn it
@@ -91,10 +93,14 @@ The final thing we'll mention here is the `man` command. If during your reading 
 
 This will bring up a page that (supposedly) describes what that function does. Navigate the man page with the arrow keys and press q to quit back to the command line. Keep in mind that man pages are written by the person or persons who created the function. This means that the man pages throughout the shell vary from extremely technical and detailed to non-existent. If the man page isn't helpful, some simple searching on-line should bring up tons of sites to supplement a confusing `man` page. :exclamation: Be careful, though, as there can be important if subtle differences between different versions of commands, and you're best off using the `man` pages on the system you're using whenever possible.
 
+---
+
 ## Forking and cloning a project using `git` and Github
 
 We'll use `git` through the course as a way for groups to manage shared project resources (like code) and as the primary means for you to turn in your finished work. Some of you will be familiar with `git` from previous courses, while others will have never used it before. If you've never used `git` before you might want to read https://www.atlassian.com/git/tutorials/
 and https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+---
 
 ## Exercises
 
@@ -171,6 +177,8 @@ And finally, include the contents of `testfile1.txt` and `testfile2.txt` after t
 sed -i "s_Eclipse_my cuddly IDE_g" testfile1.txt
 sed -i "s_Eclipse_my cuddly IDE_g" testfile2.txt
 ```
+
+---
 
 ##What to do
 
