@@ -1,6 +1,6 @@
-# Command Line Introduction pre-lab
+# Command Line Introduction pre-lab preparation
 
-Pre-lab for the [Command-line-introduction lab](https://github.com/UMM-CSci-Systems/Command-line-introduction). This lab and pre-lab cover:
+This is the pre-lab preparation for the [Command-line-introduction lab](https://github.com/UMM-CSci-Systems/Command-line-introduction). This lab and pre-lab cover:
 
 * The basics of using the command line and the `bash` shell
 * Using a command line editor
@@ -17,9 +17,7 @@ So one of the key goals of this lab is to begin to gain familiarity with the com
   - [Picking a command line editor and starting to learn it](#picking-a-command-line-editor-and-starting-to-learn-it)
   - [The basics of `bash` and Unix command line tools](#the-basics-of-bash-and-unix-command-line-tools)
   - [Forking and cloning a project using `git` and Github](#forking-and-cloning-a-project-using-git-and-github)
-  - [Exercises](#exercises)
-     - [`git` exercises](#git-exercises)
-     - [`bash` exercises](#bash-exercises)
+  - [Demo screencast series on `git`, Github, and shell scripting with `bash`](#demo-screencasts)
   - [What to do](#what-to-do)
 
 ## Key tasks
@@ -29,9 +27,8 @@ So one of the key goals of this lab is to begin to gain familiarity with the com
     - [ ] Start reading about 'bash'
 * `git`/Github
     - [ ] Start reading about 'git' and Github
-* Exercises
-    - [ ] Complete a simple group of `git` exercises
-    - [ ] Complete a simple group of `bash` exercises
+* Demo videos
+    - [ ] Watch the demo screencasts on `git`, Github, and shell scripting with `bash`
 
 ---
 
@@ -102,81 +99,19 @@ and https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and
 
 ---
 
-## Exercises
+## Demo screencasts
 
-Both of the small sets of exercises below (one on `git` and one on `bash` and the command line) will be due by the end of the first lab session of the semester. The first full lab on the command line also officially starts at the beginning of the first lab session, so the more of this pre-lab that you have done before that lab starts, the more time you'll have to work on the first lab. We want to make sure that people have a chance to ask questions and get some help before this pre-lab is due, though, which is why it's due at the _end_ of lab. All other pre-labs will be due at or before the beginning of the associated lab period.
+To pull all these concepts together with a pretty direct connection to the first lab, we've created [a series of screencasts](https://www.youtube.com/playlist?list=PLSAR9qWL-3y7Z--_jF7KUMUwjCwPjjJCY) that illustrate the use of `git`, Github, and shell scripting with `bash`. You should watch those before the first lab if possible. There are a total of five videos:
 
-- [ ] [`git` exercises](#git-exercises)
-- [ ] [`bash` exercises](#bash-exercises)
+- [ ] Part 1 (Github forking and `git` cloning) (18:32)
+- [ ] Part 2 (Testing with `bats`) (9:49)
+- [ ] Part 3 (Creating a starter shell script) (21:20)
+- [ ] Part 4 (Passing the tests the easy way) (13:03)
+- [ ] Part 5 (Completing the solution) (31:22)
 
-### `git` exercises
+The full set runs just over 1.5 hours, and it will likely take longer if you "play along at home", stopping occassionally to try things out, rewinding to make sure you understand a step, etc. So allocate a reasonable amount of time to go through this. (Feel free to increase the speed of the videos if you don't find the rather hyper effect too off-putting.)
 
-You belong to the organization UMM-CSci3403-F15.  One person in your group should login to Github and go to [https://github.umn.edu/UMM-CSci3403-F15/Prelab-0] which has this file (as you know-- you **are** after all reading this).  Next you should create a fork of this repository and push the text files (and subdirectories) with your answers from above.   Don't forget the your file of the form *your_group.member_a.member_b.lab0_prelab.txt* needs to be in your project's root directory so I can know who is in your group.  Make the name of your branch your group name.
-
-Here is one set of procedures you could follow (there are others):
-
-* Clone the file(s) from the repository using `git clone  https://github.umn.edu/UMM-CSci3403-F15/Lab_0.git` (This will make a subdirectory.  Change the current directory to this subdirectory.)
-* Create a new branch `git branch [name_of_your_branch]`
-* Switch to that branch `git checkout [name_of_your_branch]`
-* Make your changes to the contents.  (This is done on your local computer.)  This is where you make the subdirectories and files (or copy them) from your previous set of exercises.
-* Add your new files to the repository using `git add .` while in the root directory of the project,
-* commit your changes with the comment "This is my first git commit!" (you can figure this one out), 
-* and then push them with `git push -u origin [name_of_your_branch]`.
-*  You may want to log into github, go to your new branch, click "Settings", choose the "Collaborators" tab, and add your team-mates to the list.
-
-ALERT! Remember to use `git add` to put your file under version control before you commit. You can use `git status` to see what has changed and needs to be committed.  **ALSO** empty subdirectories won't be added-- so your `more_testing` subdirectory won't be included (even if you try to add it by hand) unless you create a file inside of it.  You can also fork the project 
-
-### `bash` exercises 
-
-You'll want to start by making a directory to hold your files and subdirectories.  Call that whatever you like-- you're not going to turn it in-- only its contents.  We'll call it the the prelab directory.
-
-In the prelab directory, you are going to be creating a directory called `testing` that contains two files and an empty directory called `more_testing` (More on that down below.)  Your prelab directory should also contain a text file (that you will need to create) named *your_group.member_a.member_b.lab0_prelab.txt* (for example:  `eternal_lettuce.dolanp.lamberty.lab0_prelab.txt`).  That file will contain the answers to the questions I ask below:
-
-You can either construct this directory and file structure by hand using tools like `mkdir` and editors, or you can copy the directory structure from `/home/dolanp/pub/CSci3403/testing` using `cp`. (You'll want to be able to do it both ways, so you might try it both ways as well.)
-
-Everything that follows assumes that you're starting in the directory called `testing`.
-
-The first file is called `testfile1.txt` and contains the following text:
-
-```
-I like coding with bash!
-Shell scripts are awesome!
-```
-
-
-The file `testfile2.txt` is also contained in `testing` and contains the following text:
-
-```
-I'm scared without the safety of Eclipse!
-Take me back Java!
-```
-
-Remember that the `testing` directory should also contain an **empty** directory named `more_testing`.
-
-Assume all scripts start in the testing directory unless otherwise stated.  Your *your_group_lab0_prelab.txt* file should contain the directory you're in (the `pwd` [Print Working Directory] command will be useful here) after **each** line of the following code:
-
-```
-cd /home/dolanp/pub
-pushd ~
-pushd
-```
-
-It should also contain the output of each of the following lines:
-
-```
-grep bash testfile1.txt
-grep bash testfile2.txt
-grep -l bash *.txt
-find -type f
-find -type d
-```
-
-And finally, include the contents of `testfile1.txt` and `testfile2.txt` after the following two lines are executed:
-
-```
-sed -i "s_Eclipse_my cuddly IDE_g" testfile1.txt
-sed -i "s_Eclipse_my cuddly IDE_g" testfile2.txt
-```
+If you do want to play along, then you'll need to fork the demo project so you'll have your own copy to work on. You can either fork the "master" copy at Github.com (https://github.com/UMM-CSci-Systems/git-bats-demo) or (if you're a University of Minnesota, Morris, student) you can fork a copy on the U of M Github installation (https://github.umn.edu/CSci-3403-Fall-2016/git-bats-demo).
 
 ---
 
@@ -184,10 +119,9 @@ sed -i "s_Eclipse_my cuddly IDE_g" testfile2.txt
 
 By the start of next lab you should have:
 
-   - [ ] Gone through this entire lab
+   - [ ] Gone through this entire pre-lab
    - [ ] Chosen an editor and have put some time into learning how to use it
       * Emacs
       * VIM (playing vim adventures counts)
    - [ ] Gone through a command line tutorial
-   - [ ] Attempted the [`git` Exercises](#git-exercises)
-   - [ ] Attempted the [`bash` Exercises](#bash-exercises)
+   - [ ] Watched the demo screencast series on `git`, Github, and shell programming in `bash`
