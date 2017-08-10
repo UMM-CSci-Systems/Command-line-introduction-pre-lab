@@ -11,7 +11,7 @@ One of the consistent messages we get from alums and employers is that people re
 
 So one of the key goals of this lab is to begin to gain familiarity with the command line and command line editors. One lab won't make you an expert, but hopefully it will be a useful step in helping you feel more competent.
 
-**Table of Contents** 
+**Table of Contents**
 
   - [Key tasks](#key-tasks)
   - [Picking a command line editor and starting to learn it](#picking-a-command-line-editor-and-starting-to-learn-it)
@@ -115,7 +115,7 @@ If you do want to play along, then you'll need to fork the demo project so you'l
 
 ---
 
-##What to do
+## What to do
 
 By the start of next lab you should have:
 
