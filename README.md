@@ -7,7 +7,7 @@ This is the pre-lab preparation for the [Command-line-introduction lab](https://
 * Writing simple `bash` scripts
 * Using `git` and Github as tools for managing changes to code
 
-One of the consistent messages we get from alums and employers is that people really need to know how to interact effectively with the command line. It's nice to use nifty GUI tools when they're available, but there are times when the only access you have to a box is via the command line. You might have to `ssh` to a server in the cloud, for example, edit a configuration file with a command line editor, commit and push those changes, and then restart a service. It might be that none of those steps is very hard, but the command line freaks you out it can be a nightmare. Also both `emacs` and `vim` cope fairly gracefully with editing very large files, where many GUI editors don't; we have editing multi-gigabyte text files with both `emacs` and `vim`.
+One of the consistent messages we get from alums and employers is that people really need to know how to interact effectively with the command line. It's nice to use nifty GUI tools when they're available, but there are times when the only access you have to a box is via the command line. You might have to `ssh` to a server in the cloud, for example, edit a configuration file with a command line editor, commit and push those changes, and then restart a service. It might be that none of those steps is very hard, but if the command line freaks you out it can be a nightmare. Also both `emacs` and `vim` cope fairly gracefully with editing very large files, where many GUI editors don't; we have editing multi-gigabyte text files with both `emacs` and `vim`.
 
 So one of the key goals of this lab is to begin to gain familiarity with the command line and command line editors. One lab won't make you an expert, but hopefully it will be a useful step in helping you feel more competent.
 
@@ -43,13 +43,13 @@ Some people prefer more user-friendly options like `nano` or `pico`, but if you 
 Both Nic and Peter know both `emacs` and `vim`; Nic is likely to (still) use `emacs` these days, while Peter typically uses `vim` now. There are long and drawn out religious wars between fans of the two editors which we will not enter into. We will point out a few differences, however:
 
 * Almost every version of linux or unix comes with `vi` "out of the box". Because of this, `vim` is set to be the default editor in a lot of systems. This alone is reason to know at least the bare basics of `vim` since you're almost guaranteed to find yourself in it at some point, and it would be nice if you could at least save and exit without hurting yourself.
-* Emacs is big, which is why it isn't a default part of many small Linux installs. It has a Turing complete scripting language and in many ways was designed to provide an entire "windowing" user environment before we had "real" GUI windowing environments. This obviously cuts both ways – you can use the `elisp` scripting language to do crazy complex customizations and extensions, but we don't know anyone who knows and uses more than a fraction of `emacs`s power.
+* Emacs is big, which is why it isn't a default part of many small Linux installs. It has a Turing complete scripting language and in many ways was designed to provide an entire "windowing" user environment before we had "real" GUI windowing environments. This obviously cuts both ways – you can use the `elisp` scripting language to do crazy complex customizations and extensions, but we don't know anyone who knows and uses more than a fraction of `emacs`' power.
 * `vim` is _modal_ and `emacs` isn't. In `vim` you have different modes; in "normal" mode you can navigate manipulate text, for example, where you need to switch to "insert" mode to just type text. Different people respond to in very different ways to this kind of modality; lots of people (including Peter) don't mind it at all, where it drives Nic crazy.
 * `vim` tries to improve efficiency by having the most commonly used navigation keys on the "home row" (the position at which a touch-typist's hands rest).  The arrow-keys still work as expected in `vim` (not necessarily in `vi` however).  Again, some people love this, and some people hate it.
 
 The Internet is awash in materials on both editors:
 
-* The tutorial http://vim-adventures.com/ was fun
+* The tutorial http://vim-adventures.com/ was fun (although it is **now** pay-to-play if you want to save your progress)
 * A Wikibook: ["Learning the vi Editor"](https://en.wikibooks.org/wiki/Learning_the_vi_Editor)
 * [A tour of Emacs](http://www.gnu.org/software/emacs/tour/)
 * [The _Mastering Emacs_ reading guide](https://www.masteringemacs.org/reading-guide)
@@ -96,6 +96,8 @@ This will bring up a page that (supposedly) describes what that function does. N
 
 We'll use `git` through the course as a way for groups to manage shared project resources (like code) and as the primary means for you to turn in your finished work. Some of you will be familiar with `git` from previous courses, while others will have never used it before. If you've never used `git` before you might want to read https://www.atlassian.com/git/tutorials/
 and https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+Most of the time you will be pulling from a git hub classroom site which automagically makes a repository for you-- but for many labs you'll still need to get a copy of the repository on your local machine for editing, and upload your changes for grading.
 
 ---
 
