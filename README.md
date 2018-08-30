@@ -9,7 +9,7 @@ This is the pre-lab preparation for the [Command-line-introduction lab](https://
 
 One of the consistent messages we get from alums and employers is that people really need to know how to interact effectively with the command line. It's nice to use nifty GUI tools when they're available, but there are times when the only access you have to a box is via the command line. You might have to `ssh` to a server in the cloud, for example, edit a configuration file with a command line editor, commit and push those changes, and then restart a service. It might be that none of those steps is very hard, but if the command line freaks you out it can be a nightmare. Also both `emacs` and `vim` cope fairly gracefully with editing very large files, where many GUI editors don't; we have editing multi-gigabyte text files with both `emacs` and `vim`.
 
-So one of the key goals of this lab is to begin to gain familiarity with the command line and command line editors. One lab won't make you an expert, but hopefully it will be a useful step in helping you feel more competent.
+So one of the key goals of this lab is to begin to gain familiarity with the command line and command line editors. One lab won't make you an expert, but hopefully it will be a useful step in helping you feel more competent. There's nothing to "turn in" for this pre-lab, but you'll need this material to do well in the course, so the more effort you put in now the better for later on.
 
 **Table of Contents**
 
