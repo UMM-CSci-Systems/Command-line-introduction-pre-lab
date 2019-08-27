@@ -113,7 +113,7 @@ Most of the time you will be pulling from a GitHub Classroom site which automagi
 
 ## Demo screencasts
 
-To pull all these concepts together with a pretty direct connection to the first lab, we've created [a series of screencasts](https://www.youtube.com/playlist?list=PLSAR9qWL-3y7Z--_jF7KUMUwjCwPjjJCY) that illustrate the use of `git`, Github, and shell scripting with `bash`. You should watch those before the first lab if possible. There are a total of five videos:
+To pull all these concepts together with a pretty direct connection to the first lab, we've created [a series of screencasts](https://www.youtube.com/playlist?list=PLSAR9qWL-3y7Z--_jF7KUMUwjCwPjjJCY) that illustrate the use of `git`, Github, and shell scripting with `bash`. You should watch those before the first lab if possible. There are a total of six videos:
 
 - [ ] Part 1 (Github forking and `git` cloning) (18:32)
 - [ ] Part 2 (Testing with `bats`) (9:49)
