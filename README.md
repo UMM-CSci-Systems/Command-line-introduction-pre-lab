@@ -65,13 +65,28 @@ Unix and Unix-like systems provide an incredibly powerful collection of command 
 Many of you will come into this with almost no experience with the Unix command line, while others may already have a fair amount of practice with these tools. Luckily there are a _lot_ of good resources on the Internet to help get us all up to speed. A few tutorials that we think should be helpful:
 
 * [Ubuntu's "Command line for beginners"](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0)
+* [LinuxCommand.org](http://linuxcommand.org/index.php)
+  * [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php)
+  * [Writing shell scripts](http://linuxcommand.org/lc3_writing_shell_scripts.php)
 * ["Learn Enough Command Line to Be Dangerous"](https://www.learnenough.com/command-line-tutorial)
 * ["Linux tutorial" by Ryan Chadwick](http://ryanstutorials.net/linuxtutorial/)
 * ["BASH Programming - Introduction HOW-TO"](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
 These are in roughly decreasing order of "chattiness". The Ubuntu tutorial is
-nicely structured, and the "Basic Command Line" video really does start from
-the very beginning. The "Learn Enough" tutorial is complete with sidebars and XKCD (relevant) comics, where the "BASH Programming" introduction is from 2000 and much more terse and "business-like"; the Chadwick tutorial is somewhere in between. They also don't cover exactly the same material in the same order; if you find one's coverage of a concept (e.g., pipes) doesn't make a lot of sense, have a look at how it's covered in one of the other tutorials.
+nicely structured, and the LinuxCommand.org tutorials will cover most of what we need
+in a well organized sequence of steps. The "Learn Enough" tutorial is complete with
+sidebars and XKCD (relevant) comics, where the "BASH Programming" introduction is from
+2000 and much more terse and "business-like"; the Chadwick tutorial is somewhere in
+between. They also don't cover exactly the same material in the same order; if you find
+one's coverage of a concept (e.g., pipes) doesn't make a lot of sense, have a look at how
+it's covered in one of the other tutorials.
+
+There are also quite a few "cheatsheets" online and you might see if you find something
+of that variety that works for you. They inevitably have to leave a lot out so they all
+have some kind of bias. Some are aimed more at beginners, for example, where others are
+really intended as references for more experienced sysadmins. 
+The [Linux Commands Cheat Sheet from PhoenixNAP](https://phoenixnap.com/kb/linux-commands-cheat-sheet)
+is fairly comprehensive and organized well. 
 
 Alternatively, if you prefer videos/screencasts, ["Linux Tutorial – Basic Command Line" video](https://www.youtube.com/watch?v=cBokz0LTizk) is just over 20 minutes and
 really does start from the absolute beginning.
