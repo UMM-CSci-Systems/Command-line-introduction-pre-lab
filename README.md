@@ -104,7 +104,28 @@ cover essentially the same material, but again in a quite different order and wi
 
 In order to prepare yourself for this lab, and others that will follow, you should go through one or more of these (or something similar you find on-line that's more to your taste). We don't really care _which_ one you do, but we will expect you to have gone through something like this and made some effort to explore and practice with some of the basic tools. This is likely to take a few hours (especially if you "play along" at home, which you'll really want to do if you want to _learn_ these concepts and tools), so don't assume you can just bang through one of these in 15 minutes.
 
-We would _strongly_ advise that you go through your tutorial(s) of choice in the lab or at least at a machine that has a terminal program with the bash shell installed so you can try some of these things out as you go along. Most Windows users won't have a version of `bash` (although that's changing), and if you're not sure you almost certainly don't. It's available standard out of box on Macs and Linux boxes; if you have a Mac, look for the `Terminal` program in your `Applications/Utilities` folder. If you are using windows [you can install `cygwin`](https://www.cygwin.com/). You can also using the MacOS `Terminal` program or something like Putty on Windows to `ssh` into a lab box and go through the tutorial that way.
+We would _strongly_ advise that you go through your tutorial(s) of choice in the lab or at least at a machine that has a terminal program with the bash shell installed so you can try some of these things out as you go along.
+
+- **Linux**: All this is available standard "out of the box" on
+  pretty much any Linux distribution.
+- **MacOS**: On a Mac, look for the `Terminal` program in your
+  `Applications/Utilities` folder. :warning: Starting with MacOS 10
+  (Catalina) MacOS began defaulting to `zsh` instead of `bash`, so
+  you might be using `zsh` instead of `bash`. You'll still have
+  `bash` on your system, though, and will be able to write `bash`
+  scripts without any difficulty.
+- **Windows**: If you're running Windows, your best option for this
+  class is to install [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+  This will give you
+  the ability to install any of a number of different Linux
+  distributions without the need to dual boot and all that fuss.
+  It probably won't matter which distribution you choose; we're
+  using Fedora in the lab, but we don't do anything in this class that
+  is Fedora specific.
+
+If you're ever concerned about compatibility issues, you can always
+use your favorite terminal to `ssh` into a lab box and do your
+work there remotely.
 
 As you are going through a tutorial, go through it once in a quick pass and don't worry too much if things don't make perfect sense the first time. If something is not making sense on your second reading, or does not seem to be working correctly **please** ask about it.
 
