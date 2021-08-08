@@ -46,7 +46,7 @@ Some people prefer more user-friendly options like `nano` or `pico`, but if you 
 Both Nic and Peter know both `emacs` and `vim`; Nic is likely to (still) use `emacs`, while Peter typically uses `vim`. There are long and drawn out religious wars between fans of the two editors which we will not enter into. We will point out a few differences, however:
 
 - Almost every version of linux or unix comes with `vi` "out of the box". Because of this, `vim` is set to be the default editor in a lot of systems. This alone is reason to know at least the bare basics of `vim` since you're almost guaranteed to find yourself in it at some point, and it would be nice if you could at least save and exit without hurting yourself.
-- Emacs is big, which is why it isn't a default part of many small Linux installs. It has a Turing complete scripting language and in many ways was designed to provide an entire "windowing" user environment before we had "real" GUI windowing environments. This obviously cuts both ways – you can use the `elisp` scripting language to do crazy complex customizations and extensions, but we don't know anyone who knows and uses more than a fraction of `emacs`' power.
+- Emacs is big, which is why it isn't a default part of many small Linux installs. It has a Turing complete scripting language and in many ways was designed to provide an entire "windowing" user environment before we had "real" GUI windowing environments. This obviously cuts both ways – you can use the `elisp` scripting language to do crazy complex customizations and extensions, but we don't know anyone who knows and uses more than a fraction of `emacs`'s power.
 - `vim` is _modal_ and `emacs` isn't. In `vim` you have different modes; in "normal" mode you can navigate manipulate text, for example, where you need to switch to "insert" mode to just type text. Different people respond to in very different ways to this kind of modality; lots of people (including Peter) don't mind it at all, where it drives Nic crazy.
 - `vim` tries to improve efficiency by having the most commonly used navigation keys on the "home row" (the position at which a touch-typist's hands rest).  The arrow-keys still work as expected in `vim` (not necessarily in `vi` however).  Again, some people love this, and some people hate it.
 
@@ -65,13 +65,13 @@ Unix and Unix-like systems provide an incredibly powerful collection of command 
 
 Many of you will come into this with almost no experience with the Unix command line, while others may already have a fair amount of practice with these tools. Luckily there are a _lot_ of good resources on the Internet to help get us all up to speed. A few tutorials that we think should be helpful:
 
-* [Ubuntu's "Command line for beginners"](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0)
-* [LinuxCommand.org](http://linuxcommand.org/index.php)
-  * [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php)
-  * [Writing shell scripts](http://linuxcommand.org/lc3_writing_shell_scripts.php)
-* ["Learn Enough Command Line to Be Dangerous"](https://www.learnenough.com/command-line-tutorial)
-* ["Linux tutorial" by Ryan Chadwick](http://ryanstutorials.net/linuxtutorial/)
-* ["BASH Programming - Introduction HOW-TO"](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+- [Ubuntu's "Command line for beginners"](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0)
+- [LinuxCommand.org](http://linuxcommand.org/index.php)
+  - [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php)
+  - [Writing shell scripts](http://linuxcommand.org/lc3_writing_shell_scripts.php)
+- ["Learn Enough Command Line to Be Dangerous"](https://www.learnenough.com/command-line-tutorial)
+- ["Linux tutorial" by Ryan Chadwick](http://ryanstutorials.net/linuxtutorial/)
+- ["BASH Programming - Introduction HOW-TO"](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
 These are in roughly decreasing order of "chattiness". The Ubuntu tutorial is
 nicely structured, and the LinuxCommand.org tutorials will cover most of what we need
@@ -82,12 +82,12 @@ between. They also don't cover exactly the same material in the same order; if y
 one's coverage of a concept (e.g., pipes) doesn't make a lot of sense, have a look at how
 it's covered in one of the other tutorials.
 
-There are also quite a few "cheatsheets" online and you might see if you find something
+There are also quite a few "cheat sheets" online and you might see if you find something
 of that variety that works for you. They inevitably have to leave a lot out so they all
 have some kind of bias. Some are aimed more at beginners, for example, where others are
-really intended as references for more experienced sysadmins. 
+really intended as references for more experienced sysadmins.
 The [Linux Commands Cheat Sheet from PhoenixNAP](https://phoenixnap.com/kb/linux-commands-cheat-sheet)
-is fairly comprehensive and organized well. 
+is fairly comprehensive and organized well.
 
 Alternatively, if you prefer videos/screencasts, ["Linux Tutorial – Basic Command Line" video](https://www.youtube.com/watch?v=cBokz0LTizk) is just over 20 minutes and
 really does start from the absolute beginning.
@@ -147,7 +147,7 @@ We'll use `git` and [GitHub.com](https://github.com) throughout the course as a 
   provides a nice introduction to the key ideas of `git` and how they relate to
   GitHub. The workflow outlined here may be the closest of any of the tutorials to what we
   use in most of the CSci courses here at [UMM](https://www.morris.umn.edu)).
-- This [Git cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
+- This [Git cheat sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
   is a nice, compact collection of the key `git` commands for those using
   it on the command line.
 - The [Pro Git book](https://git-scm.com/book) is a free on-line version of
@@ -170,7 +170,7 @@ We'll use `git` and [GitHub.com](https://github.com) throughout the course as a 
   - Lessons 1 and 2 in the last section ("To Origin and Beyond") do a nice job of illustrating the practical differences between using `rebase` vs. `merge` when bringing together a *bunch* of changes.
 - [Visualizing Git](https://git-school.github.io/visualizing-git/) is another
   on-line tool that lets you try out various commits and visualize what happens.
-  It doesn't have a "tutorial" structure, though, and is generally just an 
+  It doesn't have a "tutorial" structure, though, and is generally just an
   open-ended sandbox to play in. [This site](https://onlywei.github.io/explain-git-with-d3/), however, embeds the same visualizer into a web page
   with some semi-structured suggestions for things to try out.
 
