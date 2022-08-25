@@ -52,7 +52,7 @@ Both Nic and Peter know both `emacs` and `vim`; Nic is likely to (still) use `em
 
 The Internet is awash in materials (and arguments pro and con) on both editors:
 
-- The [VIM adventures tutorial](http://vim-adventures.com/) was fun (although it is **now** pay-to-play if you want to save your progress)
+- The [VIM adventures tutorial](http://vim-adventures.com/) was fun (although it is **now** pay-to-play if you want to save your progress and/or get past level 3)
 - A Wikibook: ["Learning the vi Editor"](https://en.wikibooks.org/wiki/Learning_the_vi_Editor)
 - [A tour of Emacs](http://www.gnu.org/software/emacs/tour/)
 - [The _Mastering Emacs_ reading guide](https://www.masteringemacs.org/reading-guide)
